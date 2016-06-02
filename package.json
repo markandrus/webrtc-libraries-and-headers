@@ -29,6 +29,7 @@
     "tar-fs": "^1.13.0"
   },
   "devDependencies": {
+    "build-webrtc": "https://github.com/markandrus/build-webrtc.git"
   },
   "binary": {
     "host": "https://webrtc-libraries-and-headers.s3.amazonaws.com",
