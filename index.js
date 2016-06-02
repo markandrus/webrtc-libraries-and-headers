@@ -37,6 +37,9 @@ var fullUrl
  * @returns {Promise}
  */
 function downloadOrBuild() {
+  if (process.env.SKIP_DOWNLOAD) {
+    return build();
+  }
   console.log(
     'Attempting to download WebRTC libraries and headers for platform "%s" ' +
     'and architecture "%s" from\n', options.platform, options.arch);
@@ -76,6 +79,7 @@ function downloadOrBuild() {
 function build() {
   var env = Object.assign({}, process.env);
   env.OUT = modulePath;
+  env.WEBRTC_REF = '49f7bd3';
   execSync('npm install build-webrtc', {
     env: env,
     stdio: 'inherit'
