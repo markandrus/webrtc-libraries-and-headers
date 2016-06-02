@@ -10,7 +10,7 @@ Install
 To install WebRTC libraries and headers from [branch-heads/50](https://chromium.googlesource.com/external/webrtc/+/branch-heads/50), run
 
 ```
-npm install --save webrtc-libraries-and-headers@0.50
+npm install --save webrtc-libraries-and-headers@0.50.0-49f7bd3
 ```
 
 **Binaries unavailable?** If binaries are unavailable for your particular
@@ -39,4 +39,4 @@ following versioning scheme for tracking WebRTC:
 0.$MAJOR.$PATCH-$COMMIT
 ```
 
-`$MAJOR` is the WebRTC branch head. `$COMMIT` is the WebRTC commit.
+`MAJOR` is the WebRTC branch head. `COMMIT` is the WebRTC commit.
